@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New Chose{% endblock %}
+
+{% block body %}
+    <h1>Create new Chose</h1>
+
+    {{ include('chose/_form.html.twig') }}
+
+    <a href="{{ path('app_chose_index') }}">back to list</a>
+{% endblock %}

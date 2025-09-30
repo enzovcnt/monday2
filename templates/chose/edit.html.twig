@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Chose{% endblock %}
+
+{% block body %}
+    <h1>Edit Chose</h1>
+
+    {{ include('chose/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_chose_index') }}">back to list</a>
+
+    {{ include('chose/_delete_form.html.twig') }}
+{% endblock %}

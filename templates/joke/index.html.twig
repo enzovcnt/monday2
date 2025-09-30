@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Toutes les blagues{% endblock %}
+
+{% block body %}
+        {% for joke in jokes %}
+                <p>{{ joke.value }}</p>
+                <p>{{ joke.jokeCategory.name }}</p>
+                <p>{{ joke.createdAt|date('Y-m-d H:i') }}</p>
+        {% endfor %}
+
+{% endblock %}
